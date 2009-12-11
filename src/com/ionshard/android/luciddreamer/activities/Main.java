@@ -1,6 +1,6 @@
-package com.kasuko.android.luciddramer.activities;
+package com.ionshard.android.luciddreamer.activities;
 
-import com.kasuko.android.luciddramer.R;
+import com.ionshard.android.luciddreamer.R;
 
 import android.app.Activity;
 import android.os.Bundle;
