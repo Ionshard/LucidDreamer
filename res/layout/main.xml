@@ -3,6 +3,34 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    >
+    android:background="#11AADD">
+    
+    <TextView android:text="@string/main_title"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_weight="0"
+    	android:textSize="22sp"
+    	android:gravity="center"
+    	android:background="#0E6582"
+    	android:textColor="#FFFFFF"/>
+	
+	<LinearLayout android:orientation="vertical"
+	   android:layout_width="fill_parent"
+	   android:layout_height="wrap_content"
+	   android:gravity="center"
+	   android:layout_weight="1">
+		<Button android:id="@+id/main_alarm_button" 
+			android:text="@string/main_alarm_label"
+			android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"/>
+		<Button android:id="@+id/main_reminder_button" 
+			android:text="@string/main_reminder_label"
+			android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"/>
+		<Button android:id="@+id/main_journal_button" 
+			android:text="@string/main_journal_label"
+			android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"/>
+	</LinearLayout>
 
 </LinearLayout>
