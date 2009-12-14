@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
@@ -13,6 +14,7 @@ public class Main extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.main);
         
         ((Button)findViewById(R.id.main_alarm_button)).setOnClickListener(
@@ -49,6 +51,7 @@ public class Main extends Activity {
     }
     
     private void launchJournal(){
-    	//TODO Journal Activity Launch
+    	Intent i = new Intent(this, Journal.class);
+    	startActivity(i);
     }
 }

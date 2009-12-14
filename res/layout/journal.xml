@@ -1,25 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:background="#11AADD">
-    
-    <TextView android:text="@string/journal_title"
-    	android:layout_width="fill_parent"
-    	android:layout_height="wrap_content"
-    	android:layout_weight="0"
-    	android:textSize="22sp"
-    	android:gravity="center"
-    	android:background="#0E6582"
-    	android:textColor="#FFFFFF"/>
-	
-	<FrameLayout android:orientation="vertical"
-	   android:layout_width="fill_parent"
-	   android:layout_height="fill_parent"
-	   android:layout_weight="1">
-	</FrameLayout>
-<LinearLayout android:layout_height="wrap_content" android:orientation="horizontal" android:layout_width="fill_parent"><Button android:layout_height="wrap_content" android:id="@+id/journal_prev_button" android:text="@string/journal_prev_label" android:layout_weight="1" android:layout_width="fill_parent" android:layout_gravity="left"></Button>
-<Button android:layout_height="wrap_content" android:id="@+id/journal_next_button" android:text="@string/journal_next_label" android:layout_weight="1" android:layout_width="fill_parent" android:layout_gravity="right"></Button>
-</LinearLayout>
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="#11AADD">
+
+	<TextView android:text="@string/journal_title"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_weight="0" android:textSize="22sp" android:gravity="center"
+		android:background="#0E6582" android:textColor="#FFFFFF" />
+
+	<ViewFlipper android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:layout_weight="1">
+		<!-- The following layouts MUST contain ONE parent element. -->
+		<include layout="@layout/journal_times" />
+		<include layout="@layout/journal_content" />
+		<include layout="@layout/journal_rating" />
+		<include layout="@layout/journal_technique" />
+	</ViewFlipper>
+	<LinearLayout android:layout_height="wrap_content"
+		android:orientation="horizontal" android:layout_width="fill_parent">
+		<Button android:layout_height="wrap_content" android:id="@+id/journal_prev_button"
+			android:text="@string/journal_prev_label" android:layout_weight="1"
+			android:layout_width="fill_parent" android:layout_gravity="left"
+			android:visibility="invisible" />
+		<Button android:layout_height="wrap_content" android:id="@+id/journal_next_button"
+			android:text="@string/journal_next_label" android:layout_weight="1"
+			android:layout_width="fill_parent" android:layout_gravity="right" />
+	</LinearLayout>
 </LinearLayout>
