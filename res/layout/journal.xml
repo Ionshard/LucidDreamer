@@ -8,9 +8,10 @@
 		android:layout_weight="0" android:textSize="22sp" android:gravity="center"
 		android:background="#0E6582" android:textColor="#FFFFFF" />
 
-	<ViewFlipper android:orientation="vertical"
+	<ViewFlipper android:id="@+id/journal_content_flipper"
+		android:orientation="vertical" android:layout_weight="1" 
 		android:layout_width="fill_parent" android:layout_height="fill_parent"
-		android:layout_weight="1">
+		android:inAnimation="@anim/journal_in" android:outAnimation="@anim/journal_out">
 		<!-- The following layouts MUST contain ONE parent element. -->
 		<include layout="@layout/journal_times" />
 		<include layout="@layout/journal_content" />
@@ -20,11 +21,11 @@
 	<LinearLayout android:layout_height="wrap_content"
 		android:orientation="horizontal" android:layout_width="fill_parent">
 		<Button android:layout_height="wrap_content" android:id="@+id/journal_prev_button"
-			android:text="@string/journal_prev_label" android:layout_weight="1"
+			android:text="@string/journal_prev_button" android:layout_weight="1"
 			android:layout_width="fill_parent" android:layout_gravity="left"
 			android:visibility="invisible" />
 		<Button android:layout_height="wrap_content" android:id="@+id/journal_next_button"
-			android:text="@string/journal_next_label" android:layout_weight="1"
+			android:text="@string/journal_next_button" android:layout_weight="1"
 			android:layout_width="fill_parent" android:layout_gravity="right" />
 	</LinearLayout>
 </LinearLayout>

@@ -1,41 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-		xmlns:android="http://schemas.android.com/apk/res/android"
-		android:layout_width="fill_parent"
-		android:layout_height="fill_parent"
-		android:orientation="vertical"
-		android:id="@+id/journal_times">
+
+<ScrollView	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:id="@+id/journal_times">
+	<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical">
+			
+		<TextView android:id="@+id/times_title_label"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/times_title_label" />
+		<EditText android:id="@+id/times_title_text"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:gravity="center_horizontal"/>
+			
+		<TextView android:id="@+id/times_date_label"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/times_date_label" />
+		<DatePicker android:id="@+id/times_title_text"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal" />
 		
-	<TextView android:id="@+id/times_title_label"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:text="@string/times_title_label" />
-	<EditText android:id="@+id/times_title_text"
-		android:layout_width="fill_parent"
-		android:layout_height="wrap_content" />
-		
-	<TextView android:id="@+id/times_date_label"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:text="@string/times_date_label" />
-	<DatePicker android:id="@+id/times_title_text"
-		android:layout_width="fill_parent"
-		android:layout_height="wrap_content" />
-	
-	<TextView android:id="@+id/times_sleep_label"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:text="@string/times_sleep_label" />
-	<TimePicker android:id="@+id/times_sleep_time"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content" />
-		
-	<TextView android:id="@+id/times_wake_label"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:text="@string/times_wake_label" />
-	<TimePicker android:id="@+id/times_wake_time"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content" />
-  
-</LinearLayout>
+		<TextView android:id="@+id/times_sleep_label"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/times_sleep_label" />
+		<TimePicker android:id="@+id/times_sleep_time"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" />
+			
+		<TextView android:id="@+id/times_wake_label"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/times_wake_label" />
+		<TimePicker android:id="@+id/times_wake_time"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+</ScrollView>
