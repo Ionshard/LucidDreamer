@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="rating_genre_strings_english">
+	<item>Ordinary</item>
+	<item>Fun</item>
+	<item>Drama</item>
+	<item>Science Fiction</item>
+	<item>Love</item>
+	<item>Ecstasy</item>
+	<item>Sex</item>
+	<item>Thriller</item>
+	<item>Action</item>
+	<item>Adventure</item>
+	<item>Detective</item>
+	<item>Mystical</item>
+	<item>Horror</item>
+	<item>Humor</item>
+	<item>Nightmare</item>
+	<item>Spiritual</item>
+</string-array>
+</resources>

@@ -26,7 +26,7 @@ public class Journal extends Activity {
 		setContentView(R.layout.journal);
 		
 		_firstView = findViewById(R.id.journal_times);
-		//_lastView = findViewById(R.id.journal_technique);
+		_lastView = findViewById(R.id.journal_technique);
 		_viewFlipper = (ViewFlipper)findViewById(R.id.journal_content_flipper);
 		_nextButton = (Button)findViewById(R.id.journal_next_button);
 		_previousButton = (Button)findViewById(R.id.journal_prev_button);

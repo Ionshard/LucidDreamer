@@ -9,4 +9,27 @@
 <string name="times_wake_label">Wake Time</string>
 <string name="times_now_button">Now</string>
 <string name="times_offset_button">Offset</string>
+<string name="content_content_label">Content</string>
+<string name="rating_genre_label">Genre</string>
+<string name="rating_rating_label">Rating</string>
+<string name="rating_favourite_label">Favourite</string>
+<string-array name="rating_genre_strings">
+	<item>Ordinary</item>
+	<item>Fun</item>
+	<item>Drama</item>
+	<item>Science Fiction</item>
+	<item>Love</item>
+	<item>Ecstasy</item>
+	<item>Sex</item>
+	<item>Thriller</item>
+	<item>Action</item>
+	<item>Adventure</item>
+	<item>Detective</item>
+	<item>Mystical</item>
+	<item>Horror</item>
+	<item>Humor</item>
+	<item>Nightmare</item>
+	<item>Spiritual</item>
+</string-array>
+<string name="rating_dreamsigns_label">Dreamsigns</string>
 </resources>
