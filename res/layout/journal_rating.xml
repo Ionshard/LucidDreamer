@@ -1,56 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
 	android:id="@+id/journal_rating" android:orientation="vertical"
 	android:layout_width="fill_parent" android:layout_height="fill_parent">
-
-	<LinearLayout android:orientation="horizontal"
-		android:layout_width="fill_parent"
-		android:layout_height="wrap_content">
-		<LinearLayout android:layout_width="fill_parent"
-			android:layout_height="wrap_content"
-			android:orientation="vertical"
-			android:layout_weight="1">
-			<TextView android:text="@string/rating_genre_label"
-				android:id="@+id/rating_genre_label" android:layout_width="wrap_content"
-				android:layout_height="wrap_content" />
-			<Spinner android:id="@+id/rating_genre_spinner"
-				android:layout_width="fill_parent" android:layout_height="wrap_content"
-				android:entries="@array/rating_genre_strings" />
-		</LinearLayout>
-		<LinearLayout android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:orientation="vertical"
-			android:gravity="center_horizontal">
-			<TextView android:text="@string/rating_favourite_label"
-				android:id="@+id/rating_favourite_label" android:layout_width="wrap_content"
-				android:layout_height="wrap_content" />
-			<CheckBox android:id="@+id/rating_favourite_checkbox"
-				android:layout_width="wrap_content" android:layout_height="wrap_content" />
-		</LinearLayout>
-	</LinearLayout>
-
-	<TextView android:text="@string/rating_rating_label"
-		android:id="@+id/rating_rating_label" android:layout_width="wrap_content"
-		android:layout_height="wrap_content" />
-	<RatingBar android:id="@+id/rating_rating_rating"
-		android:layout_width="wrap_content" android:layout_height="wrap_content"
-		android:stepSize="1" android:numStars="5"
-		android:gravity="center_horizontal" />
-		
-	<TextView android:text="@string/rating_dreamsigns_label"
-		android:id="@+id/rating_dreamsigns_label" android:layout_width="wrap_content"
-		android:layout_height="wrap_content" />
-	<LinearLayout android:orientation="horizontal"
-		android:layout_width="fill_parent"
-		android:layout_height="wrap_content">
-		<Seekbar android:id="@+id/rating_action_seekbar" 
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+	
+		<LinearLayout android:orientation="horizontal"
 			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:layout_weight="1">
+				<TextView android:text="@string/rating_genre_label"
+					android:id="@+id/rating_genre_label" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+				<Spinner android:id="@+id/rating_genre_spinner"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:entries="@array/rating_genre_strings" />
+			</LinearLayout>
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:gravity="center_horizontal">
+				<TextView android:text="@string/rating_favourite_label"
+					android:id="@+id/rating_favourite_label" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+				<CheckBox android:id="@+id/rating_favourite_checkbox"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+			</LinearLayout>
+		</LinearLayout>
+	
+		<TextView android:text="@string/rating_rating_label"
+			android:id="@+id/rating_rating_label" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+		<RatingBar android:id="@+id/rating_rating_rating"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:stepSize="1" android:numStars="5"
+			android:gravity="center_horizontal" />
+			
+		<TextView android:text="@string/rating_dreamsigns_label"
+			android:id="@+id/rating_dreamsigns_label" android:layout_width="wrap_content"
 			android:layout_height="wrap_content" />
 		
-	</LinearLayout>
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			<TextView android:text="@string/rating_action_label"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+			<SeekBar android:id="@+id/rating_action_seekbar"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:max="10" />
+			<EditText android:id="@+id/rating_action_text"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:inputType="number" />
+		</LinearLayout>
+		
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			<TextView android:text="@string/rating_form_label"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+			<SeekBar android:id="@+id/rating_form_seekbar"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:max="10" />
+			<EditText android:id="@+id/rating_form_text"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:inputType="number" />
+		</LinearLayout>
+		
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			<TextView android:text="@string/rating_content_label"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+			<SeekBar android:id="@+id/rating_content_seekbar"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:max="10" />
+			<EditText android:id="@+id/rating_content_text"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:inputType="number" />
+		</LinearLayout>
+		
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			<TextView android:text="@string/rating_inner_label"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+			<SeekBar android:id="@+id/rating_inner_seekbar"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:max="10" />
+			<EditText android:id="@+id/rating_inner_text"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:inputType="number" />
+		</LinearLayout>
 		
 	
-	
-
-	
-</LinearLayout>
+		
+	</LinearLayout>
+</ScrollView>

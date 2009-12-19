@@ -32,4 +32,8 @@
 	<item>Spiritual</item>
 </string-array>
 <string name="rating_dreamsigns_label">Dreamsigns</string>
+<string name="rating_action_label">Action</string>
+<string name="rating_form_label">Form</string>
+<string name="rating_content_label">Content</string>
+<string name="rating_inner_label">Inner</string>
 </resources>
